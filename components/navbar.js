@@ -80,7 +80,7 @@ export default function Navbar() {
                         </a>
                       </Link>
                     ))}
-                    <Link href="https://drive.google.com/file/d/1cr1OvOCBImFQERb7Q3QNi_JE8APTEMS_/view?usp=sharing" target='_blank'>
+                    <Link href="https://ucarecdn.com/5b8abcf1-b81a-464d-8788-ec6ed234a745/" target='_blank'>
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                         Whitepaper
                       </a>
@@ -108,7 +108,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-3 lg:flex nav__item">
-          <Link href="https://drive.google.com/file/d/1cr1OvOCBImFQERb7Q3QNi_JE8APTEMS_/view?usp=sharing" target='_blank'>
+          <Link href="https://ucarecdn.com/5b8abcf1-b81a-464d-8788-ec6ed234a745/" target='_blank'>
             <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               Whitepaper
             </a>
