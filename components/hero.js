@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="hidden lg:block">
+          <div className=" lg:block">
             <Image
               src={heroImg}
               width="616"
