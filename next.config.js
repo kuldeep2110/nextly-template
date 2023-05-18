@@ -3,5 +3,8 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  experimental: {
+    newNextLinkBehavior: false,
+  },
   output: "standalone",
 };

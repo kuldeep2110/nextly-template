@@ -52,20 +52,20 @@ export default function Hero() {
               <Ankr />
             </div>
             <div className="text-gray-400 dark:text-gray-400">
-              <img src="img/Moralis-Logo-LightBG-Large.png" class="img-fluid partnerImg" />
+              <img src="img/Moralis-Logo-LightBG-Large.png" className="img-fluid partnerImg" />
             </div>
             <div className="text-gray-400 dark:text-gray-400">
-              <img src="img/aws.svg" class="img-fluid partnerImg" />
+              <img src="img/aws.svg" className="img-fluid partnerImg" />
 
             </div>
             <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <img src="img/paython.png" class="img-fluid partnerImg" />
-              
+              <img src="img/paython.png" className="img-fluid partnerImg" />
+
 
 
             </div>
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <img src="img/pngwing.com.png" class="img-fluid partnerImg" />
+              <img src="img/pngwing.com.png" className="img-fluid partnerImg" />
 
             </div>
           </div>
