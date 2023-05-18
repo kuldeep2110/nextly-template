@@ -8,3 +8,24 @@
     @apply dark:bg-trueGray-900;
   }
 }
+
+.partnerImg {
+  height: 52px;
+  filter: grayscale(10.2);
+}
+.text-start {
+  text-align: left;
+}
+ul.myul {
+  list-style: circle;
+  margin: 0;
+  padding: 4px 17px;
+}
+.logow {
+  height: 50px;
+  width: auto;
+}
+.iconFooter {
+  height: 25px;
+  font-size: 25px;
+}
