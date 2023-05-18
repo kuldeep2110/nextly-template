@@ -11,9 +11,14 @@
 
 .partnerImg {
   height: 52px;
+      height:40px;
   filter: grayscale(10.2);
-  background: #8f8f8f1c;
+}
+.dark .partnerImgBG {
+    background: #5555559c;
     border-radius: 5px;
+    padding: 10px;
+    height: 54px;
 }
 .text-start {
   text-align: left;
@@ -24,10 +29,13 @@ ul.myul {
   padding: 4px 17px;
 }
 .logow {
-  height: 50px;
+  height: 57px;
   width: auto;
 }
 .iconFooter {
   height: 25px;
   font-size: 25px;
+}
+.bg-indigo-600 {
+    background-color: #062BC8;
 }

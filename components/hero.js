@@ -22,7 +22,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
-                Download Whitepaper
+                Whitepaper
               </a>
             </div>
           </div>
@@ -48,24 +48,14 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className=" text-gray-400 dark:text-gray-400 partnerImgBG ">
               <Ankr />
             </div>
             <div className="text-gray-400 dark:text-gray-400">
-              <img src="img/Moralis-Logo-LightBG-Large.png" className="img-fluid partnerImg" />
+              <img src="img/brands/logo_footer.svg" className="img-fluid partnerImg partnerImgBG" />
             </div>
             <div className="text-gray-400 dark:text-gray-400">
-              <img src="img/aws.svg" className="img-fluid partnerImg" />
-
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <img src="img/paython.png" className="img-fluid partnerImg" />
-
-
-
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <img src="img/pngwing.com.png" className="img-fluid partnerImg" />
+              <img src="img/brands/pink.png" className="img-fluid partnerImg partnerImgBG" />
 
             </div>
           </div>

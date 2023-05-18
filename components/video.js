@@ -4,13 +4,11 @@ import Container from "./container";
 export default function Video() {
   const [playVideo, setPlayVideo] = useState(false);
   return (
-    <Container >
+    <Container className='p-0'>
 
       <div className="container 0 mx-auto xl:px-0 text-start" id='roadmap'>
-        <div className="grid gap-10 lg:grid-cols-2 flex flex-wrap xl:grid-cols-4">
-          <div className="lg:col-span-2 xl:col-auto">
-            <img src="img/client/FOURTH_IMAGE.png" className="img-fluid" />
-          </div>
+        <div className="grid gap-10 lg:grid-cols-2 flex flex-wrap xl:grid-cols-3">
+          
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-col  w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
               <h4 className="text-2xl leading-normal "><b>Phase 1</b></h4>

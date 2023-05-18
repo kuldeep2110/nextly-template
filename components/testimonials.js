@@ -8,19 +8,20 @@ import userThreeImg from "../public/img/user3.jpg";
 
 export default function Testimonials() {
   return (
-    <Container className="flex flex-wrap items-center mb-20 lg:gap-10 lg:flex-nowrap ">
+    <Container className="items-center justify-center text-center mb-20 lg:gap-10 lg:flex-nowrap  p-8 mx-auto mt-20 ">
+
         <div
-          className={`flex items-center justify-center w-full lg:w-1/3 `}>
+          className={` w-full lg:w-1/1 `} >
+          <h2 className=" mt-0 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white mb-3">Daily FOMO Tech is a powerful suite of Telegram bots. </h2>
+          <p>Launched to capitalize on the growing DeFi market. We provide advertising solutions for token owners.</p>
+        </div>
+        <div
+          className={`flex items-center justify-center w-full  pt-8 `}>
           <div >
            <img src="img/client/FIFTH_IMAGE.png" className="img-fluid" />
           </div>
         </div>
 
-        <div
-          className={`flex flex-wrap  w-full lg:w-1/2 `} >
-          <h2 className=" mt-0 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white mb-3">Daily FOMO Tech is a powerful suite of Telegram bots. </h2>
-          <p>Launched to capitalize on the growing DeFi market. We provide advertising solutions for token owners.</p>
-        </div>
       </Container>
   );
 }

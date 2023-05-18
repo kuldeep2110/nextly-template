@@ -36,10 +36,9 @@ export default function Footer() {
   return (
     <div className="relative">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-3">
+          <div className="lg:col-span-1">
             <div>
-              {" "}
               <Link href="/">
                 <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                   <span>
@@ -56,8 +55,7 @@ export default function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              FOMO is the backbone of our market ready decentralized advertising platform. Meet the utility token powering our ecosystem.
-            </div>
+             FOMO is part of the Daily FOMO network. A fast growing Web3 startup built on the BNB Chain.</div>
           </div>
 
           <div>
@@ -71,7 +69,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div>
+          {/*<div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
                 <Link key={index} href="/">
@@ -81,7 +79,7 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div>*/}
           <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
@@ -119,7 +117,7 @@ export default function Footer() {
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}.
-          Made with by Daily FOMO. Development by   Web3Templates.
+          Built with Next.js by FOMO Labs
           {/*<a href="https://web3templates.com/" target="_blank" rel="noopener">
             Web3Templates.
           </a>{" "}
