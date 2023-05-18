@@ -12,6 +12,8 @@
 .partnerImg {
   height: 52px;
   filter: grayscale(10.2);
+  background: #8f8f8f1c;
+    border-radius: 5px;
 }
 .text-start {
   text-align: left;
