@@ -55,7 +55,7 @@ const faqdata = [
   {
     question: "How long will the LP be locked for?",
     answer:
-      "The liquidity will be blocked for 400 days.",
+      "The liquidity will be locked for 400 days.",
   },
   {
     question: "Is there a transaction fee (tax) for trading FOMO?",
