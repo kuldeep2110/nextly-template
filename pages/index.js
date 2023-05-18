@@ -31,7 +31,7 @@ export default function Home() {
         <title>$FOMO Token</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="FOMO is part of the Daily FOMO network. A fast growing Web3 startup built on the BNB Chain."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
