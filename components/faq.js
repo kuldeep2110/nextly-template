@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import { ChevronUpIcon } from "@heroicons/react/solid";
 
-const Faq = () => {
+export default function Faq() {
   return (
     <Container className="!p-0">
       <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
@@ -35,23 +35,31 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "What is FOMO?",
+    answer: "FOMO is the utility token for Daily FOMO Tech that is launching on the BNB Chain.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "What is Daily FOMO Tech?",
+    answer: "Daily FOMO Tech is a suite of Telegram bots that token owners can use to drive engagement and new investors. Built over the last 4 months and ready to launch.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "What is the total supply of FOMO?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Total supply is 1,000,000,000",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Where can I buy FOMO?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "FOMO will launch on PinkSale for a presale and then be available to trade on PancakeSwap shortly after.",
+  },
+  {
+    question: "How long will the LP be locked for?",
+    answer:
+      "The liquidity will be blocked for 400 days.",
+  },
+  {
+    question: "Is there a transaction fee (tax) for trading FOMO?",
+    answer:
+      "There is a small fee taken off each buy and sell to power the FOMO ecosystem. The buy tax is 5%, the sell tax is 6%.",
   },
 ];
-
-export default Faq;

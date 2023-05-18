@@ -1,15 +1,29 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
-import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 
-const Navbar = () => {
+export default function Navbar() {
   const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
-    "Blog",
+    {
+      name : "Home",
+      link:"./"
+    }, 
+    {
+      name:"Revenue Model",
+      link:"#model"
+    }, 
+    {
+      name: "Tokenomics",
+      link: "#tokenomics"
+    }, 
+    {
+      name: "Roadmap",
+      link:"#roadmap"
+    }, 
+    {
+      name : "FAQ",
+      link:"#faq"
+    }
   ];
 
   return (
@@ -21,18 +35,17 @@ const Navbar = () => {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                  <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <Image
-                        src="/img/logo.svg"
+                      <img
+                        src="/img/logo.png"
                         alt="N"
                         width="32"
                         height="32"
-                        className="w-8"
+                        className="logow"
                       />
                     </span>
-                    <span>Nextly</span>
-                  </span>
+                  </a>
                 </Link>
 
                 <Disclosure.Button
@@ -61,12 +74,16 @@ const Navbar = () => {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     {navigation.map((item, index) => (
-                      <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
-                          {item}
+                      <Link key={index} href={item.link}>
+                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                          {item.name}
+                        </a>
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
-                        Get Started
+                    <Link href="https://drive.google.com/file/d/1cr1OvOCBImFQERb7Q3QNi_JE8APTEMS_/view?usp=sharing" target='_blank'>
+                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                        Whitepaper
+                      </a>
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -80,17 +97,21 @@ const Navbar = () => {
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
-                    {menu}
+                <Link href={menu.link}>
+                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                    {menu.name}
+                  </a>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
+        <div className="hidden mr-3 space-x-3 lg:flex nav__item">
+          <Link href="https://drive.google.com/file/d/1cr1OvOCBImFQERb7Q3QNi_JE8APTEMS_/view?usp=sharing" target='_blank'>
+            <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+              Whitepaper
+            </a>
           </Link>
 
           <ThemeChanger />
@@ -99,5 +120,3 @@ const Navbar = () => {
     </div>
   );
 }
-
-export default Navbar;
